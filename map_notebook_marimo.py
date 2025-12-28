@@ -37,7 +37,7 @@ def _(json, leafmap):
     )
 
     m.add_tile_layer(
-        url="https://tiles.lightfield.ag/hillshade_tiles_planet_z10/{z}/{x}/{y}.png",
+        url="https://tiles.lightfield.ag/hillshade_tiles_planet_z10_webp/{z}/{x}/{y}.webp",
         before_id='Residential',
         paint={
             "raster-resampling": "nearest",  # Use nearest neighbor instead of linear
