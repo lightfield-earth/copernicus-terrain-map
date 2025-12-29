@@ -16,9 +16,24 @@ app = marimo.App(width="medium")
 @app.cell
 def _():
     import json
+    import marimo as mo
     import leafmap.maplibregl as leafmap
     from leafmap.maplibregl import Layer
-    return json, leafmap
+    return json, leafmap, mo
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ### Generating HTML for Map Deployment
+    #### December 2025
+    At present, when executing this notebook from within the Marimo interactive notebook experience, the HTML export does not function properly. The resulting HTML only includes the base map. To properly export the HTML for deployment, execute
+    ```bash
+    python map_notebook_marimo.py
+    ```
+    at the command line.
+    """)
+    return
 
 
 @app.cell
@@ -37,7 +52,7 @@ def _(json, leafmap):
     )
 
     m.add_tile_layer(
-        url="https://tiles.lightfield.ag/hillshade_tiles_planet_z10_webp/{z}/{x}/{y}.webp",
+        url="https://tiles.lightfield.ag/hillshade_tiles_planet_z11_webp/{z}/{x}/{y}.webp",
         before_id='Residential',
         paint={
             "raster-resampling": "nearest",  # Use nearest neighbor instead of linear
