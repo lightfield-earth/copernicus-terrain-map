@@ -48,7 +48,14 @@ def _(json, leafmap):
         max_zoom=10,
         height='600px',                            
         style=style_spec,
-        use_message_queue=True
+        use_message_queue=True,     # Needed to export HTML for the full map
+        hash=True,
+        controls={
+            "geolocate": "top-right",
+            "navigation": "top-right",
+            "fullscreen": "top-right", 
+            "scale": "bottom-left"
+        }
     )
 
     m.add_tile_layer(
