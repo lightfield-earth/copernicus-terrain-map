@@ -48,7 +48,7 @@ def _(json, leafmap):
         max_zoom=10,
         height='600px',                            
         style=style_spec,
-        use_message_queue=True,     # Needed to export HTML for the full map
+        use_message_queue=True,     # Needed to export HTML
         hash=True,
         controls={
             "geolocate": "top-right",
@@ -69,6 +69,8 @@ def _(json, leafmap):
 
     image = "LightField Combination Mark.png"
     m.add_image(image=image, position="top-left", height='50px')
+
+    #m.add_globe_control(position="top-right")
 
     m
     return (m,)
