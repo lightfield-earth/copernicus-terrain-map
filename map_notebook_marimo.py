@@ -9,7 +9,7 @@
 
 import marimo
 
-__generated_with = "0.19.2"
+__generated_with = "0.19.8"
 app = marimo.App(width="medium")
 
 
@@ -19,6 +19,7 @@ def _():
     import marimo as mo
     import leafmap.maplibregl as leafmap
     from leafmap.maplibregl import Layer
+
     return json, leafmap, mo
 
 
@@ -67,8 +68,8 @@ def _(json, leafmap):
         }
     )
 
-    image = "LightField Combination Mark.png"
-    m.add_image(image=image, position="top-left", height='50px')
+    image = "LightField Logo.png"
+    m.add_image(image=image, position="bottom-left", height='50px')
 
     #m.add_globe_control(position="top-right")
 
