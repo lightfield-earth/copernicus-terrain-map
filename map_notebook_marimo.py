@@ -9,7 +9,7 @@
 
 import marimo
 
-__generated_with = "0.19.8"
+__generated_with = "0.19.11"
 app = marimo.App(width="medium")
 
 
@@ -63,6 +63,7 @@ def _(json, leafmap):
         url="https://tiles.lightfield.ag/hillshade_tiles_planet_z11_webp/{z}/{x}/{y}.webp",
         before_id='Residential',
         paint={
+            "raster-fade-duration": 0,       # Remove default 300 ms fade duration
             "raster-resampling": "nearest",  # Use nearest neighbor instead of linear
             "raster-opacity": 1.0
         }
