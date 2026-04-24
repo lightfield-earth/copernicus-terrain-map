@@ -9,7 +9,7 @@
 
 import marimo
 
-__generated_with = "0.23.1"
+__generated_with = "0.23.2"
 app = marimo.App(width="medium")
 
 
@@ -46,7 +46,7 @@ def _(json, leafmap):
         center=(-98.5795,39.8283),  # Center of the US
         zoom=3,                     # Initial zoom level
         min_zoom=2,
-        max_zoom=11,
+        max_zoom=12,
         height='600px',                            
         style=style_spec,
         use_message_queue=True,     # Needed to export HTML
@@ -60,12 +60,11 @@ def _(json, leafmap):
     )
 
     m.add_tile_layer(
-        url="https://tiles.lightfield.ag/hillshade_tiles_planet_z11_webp/{z}/{x}/{y}.webp",
+        url="https://tiles.lightfield.ag/hillshade_tiles_planet_z12_webp/{z}/{x}/{y}.webp",
         before_id='Residential',
         paint={
             "raster-fade-duration": 0,       # Remove default 300 ms fade duration
             "raster-resampling": "nearest",  # Use nearest neighbor instead of linear
-            "raster-opacity": 1.0
         }
     )
 
