@@ -9,7 +9,7 @@
 
 import marimo
 
-__generated_with = "0.23.3"
+__generated_with = "0.23.4"
 app = marimo.App(width="medium")
 
 
@@ -46,7 +46,7 @@ def _(json, leafmap):
         center=(-98.5795,39.8283),  # Center of the US
         zoom=3,                     # Initial zoom level
         min_zoom=2,
-        max_zoom=12,
+        max_zoom=14,
         height='600px',                            
         style=style_spec,
         use_message_queue=True,     # Needed to export HTML
