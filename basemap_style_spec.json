@@ -104,7 +104,7 @@
       "minzoom": 7,
       "filter": ["all", ["==", "class", "dam"], ["==", "$type", "Polygon"]],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "hsl(0, 0%, 68%)", "fill-opacity": 1}
+      "paint": {"fill-color": "rgba(181, 128, 71, 1)", "fill-opacity": 1}
     },
     {
       "id": "Quarry",
