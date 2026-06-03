@@ -9,7 +9,7 @@
 
 import marimo
 
-__generated_with = "0.23.5"
+__generated_with = "0.23.8"
 app = marimo.App(width="medium")
 
 
@@ -46,7 +46,7 @@ def _(json, leafmap):
     )
 
     m.add_tile_layer(
-        url="https://tiles.lightfield.ag/hillshade_tiles_planet_z12_webp/{z}/{x}/{y}.webp",
+        url="https://tiles.lightfield.earth/hillshade_tiles_planet_z12_webp/{z}/{x}/{y}.webp",
         before_id='Residential',
         paint={
             "raster-fade-duration": 0,       # Remove default 300 ms fade duration
